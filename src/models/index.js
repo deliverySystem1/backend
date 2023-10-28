@@ -33,7 +33,7 @@ orders.belongsTo(orders, {
 
 
 //---------
-stores.hasMany(reel, {
+stores.hasMany(orders, {
   foreignKey: "storeId",
   sourceKey: "id",
 });
