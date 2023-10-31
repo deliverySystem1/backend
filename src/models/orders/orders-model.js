@@ -14,6 +14,7 @@ const ordersModel = (sequelize, DataTypes) =>
       driverId: { type: DataTypes.INTEGER },
       storeId: { type: DataTypes.INTEGER },
       note: { type: DataTypes.TEXT },
+      arrived:{type:DataTypes.BOOLEAN,  defaultValue: false},
       long: {
         type: DataTypes.FLOAT,
         required: true,
